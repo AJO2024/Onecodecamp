@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h2>HTML Forms OCC PHT01</h2>
+ <form>
+    <label for="fname">First name</label>
+    <input type="text" name="fname" id="fname" required/>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" required/>
+    <br><br>
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your valid email address"/>
+    <br><br>
+    <label for="phone Number">Phone Number</label>
+    <!--
+        1. Number
+        2. tel
+    -->
+    <input type="tel" name="phone Number" id="phone Number"   pattern="\+\(\d{2}\) \d{3}-\d{3}-\d{4}" placeholder="+(12) 345-678-9000">
+    <br><br>
+
+    <label for="operating system">Operating System</label>
+        <select name="operating system" id="operating system">
+
+
+            <option value="none">-----</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+            <option value="macos">MacOS</option>
+            <option value="solaris">Solaris</option>
+            <option value="FreeBSD">FreeBSD</option>
+        </select>
+        <br><br>
+
+        <h3>Gender</h3>
+        <input type="radio" name="gender1" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="radio" name="gender2" id="female" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender3" id="lgbtq" value="lgbtq">
+        <label for="lgbtq">LGBTQ</label>
+        <br><br>
+
+        <h3>Gender Preference</h3>
+        <input type="checkbox" name="gender" id="gender" value="gender">
+        <label for="man">Man</label>
+
+        <input type="checkbox" name="gender" id="gender" value="gender">
+        <label for="woman">Woman</label>
+        <br><br>
+
+        <button type="submit">Submit Form</button>
+
+ </form>
+    
+
+
+
+</body>
+</html>
